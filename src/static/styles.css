@@ -59,10 +59,11 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #e0e4f2;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff 0%, #f7f8fd 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.06);
 }
 
 .activity-card h4 {
@@ -72,6 +73,97 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding: 14px 15px;
+  border-radius: 8px;
+  background-color: #eef1fb;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+
+.participants-heading h5 {
+  color: #1a237e;
+  font-size: 15px;
+}
+
+.participant-count {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background-color: #dce2fa;
+  color: #303f9f;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.participants-list {
+  padding: 0;
+  list-style: none;
+  color: #444b63;
+  overflow-wrap: anywhere;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: 1px solid #f0c5c5;
+  border-radius: 7px;
+  background-color: #fff;
+  color: #b42318;
+}
+
+.participant-remove:hover {
+  background-color: #ffebee;
+  color: #8e1b12;
+}
+
+.participant-remove:focus-visible {
+  outline: 3px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participant-remove svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.participants-empty {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .form-group {
